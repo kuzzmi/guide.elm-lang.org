@@ -1,17 +1,15 @@
-# An Introduction to Elm
+# Вступ до Elm
 
-**Elm is a functional language that compiles to JavaScript.** It competes with projects like React as a tool for creating websites and web apps. Elm has a very strong emphasis on simplicity, ease-of-use, and quality tooling.
+**Elm - це функціональна мова, яка компілюється в JavaScript.** Вона конкурує з такими проектами як React, виконуючи роль інструменту для створення веб-сайтів та веб-додатків. Elm робить дуже сильний акцент на простоту, зручність у використанні та якість інструментів.
 
-This guide will:
+Це керівництво:
+   - Навчить вас основам програмування в Elm.
+   - Продемонструє, як робити інтерактивні додатки з використанням *Elm архітектури*.
+   - Підкреслить загальні принципи і закономірності, які характерні для програмування на будь-якій мові.
 
-  - Teach you the fundamentals of programming in Elm.
-  - Show you how to make interactive apps with *The Elm Architecture*.
-  - Emphasize the principles and patterns that generalize to programming in any language.
+Зрештою, я сподіваюся, що ви будете не тільки мати можливість створювати великі веб-додатки в Elm, але і розуміти основні ідеї та шаблони проектування, які роблять Elm чудовим у використанні.
 
-By the end I hope you will not only be able to create great web apps in Elm, but also understand the core ideas and patterns that make Elm nice to use.
-
-If you are on the fence, I can safely guarantee that if you give Elm a shot and actually make a project in it, you will end up writing better JavaScript and React code. The ideas transfer pretty easily!
-
+Якщо ви вже на борту, я можу легко вам гарантувати, що якщо ви надасте Elm шанс та насправді зробите проект у ньому, у кінці кінців ви зможете писати набагато кращий код на JavaScript та React.
 
 ## A Quick Sample
 
