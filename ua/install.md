@@ -12,8 +12,6 @@
 [npm]: https://www.npmjs.com/package/elm
 [build]: https://github.com/elm-lang/elm-platform
 
-After installing through any of those routes, you will have the following command line tools:
-
 Після встановлення через будь-які вказані джерела, ви будете мати наступні інструменти для командного рядка:
 
 - [`elm-repl`](#elm-repl) &mdash; грайтеся з виразами Elm
@@ -40,7 +38,7 @@ After installing through any of those routes, you will have the following comman
 
 Якщо в вас ще немає взагалі редактору, то [Sublime Text](https://www.sublimetext.com/) буде добрим стартом.
 
-Також ви можливо захочете спробувати [elm-format][], він робить ваш код гарним!
+Також ви можливо захочете спробувати [elm-format][], він робить ваш код гарнішим!
 
 [elm-format]: https://github.com/avh4/elm-format
 
