@@ -1,11 +1,11 @@
-> **Note:** If you do not want to install yet, you can follow along in this guide with the [online editor](http://elm-lang.org/try) and the [online REPL](http://elmrepl.cuberoot.in/).
+> **Примітка:** Якщо ви ще не хочете встановлювати Elm, ви можете користуватись [онлайн-редактором](http://elm-lang.org/try) та [онлайн REPL](http://elmrepl.cuberoot.in/).
 
 
-# Install
+# Установка
 
-  * Mac &mdash; [installer][mac]
-  * Windows &mdash; [installer][win]
-  * Anywhere &mdash; [npm installer][npm] or [build from source][build]
+  * Mac &mdash; [встановлювач][mac]
+  * Windows &mdash; [встановлювач][win]
+  * Anywhere &mdash; [npm встановлювач][npm] або [зібрати з початкового коду][build]
 
 [mac]: http://install.elm-lang.org/Elm-Platform-0.18.pkg
 [win]: http://install.elm-lang.org/Elm-Platform-0.18.exe
@@ -14,19 +14,20 @@
 
 After installing through any of those routes, you will have the following command line tools:
 
-- [`elm-repl`](#elm-repl) &mdash; play with Elm expressions
-- [`elm-reactor`](#elm-reactor) &mdash; get a project going quickly
-- [`elm-make`](#elm-make) &mdash; compile Elm code directly
-- [`elm-package`](#elm-package) &mdash; download packages
+Після встановлення через будь-які вказані джерела, ви будете мати наступні інструменти для командного рядка:
 
-We will go over how they all work in more detail right after we get your editor set up!
+- [`elm-repl`](#elm-repl) &mdash; грайтеся з виразами Elm
+- [`elm-reactor`](#elm-reactor) &mdash; зробіть розробку проекту швидше
+- [`elm-make`](#elm-make) &mdash; компілюйте Elm код
+- [`elm-package`](#elm-package) &mdash; скачуйте Elm пакети
 
-> **Troubleshooting:** The fastest way to learn *anything* is to talk with other people in the Elm community. We are friendly and happy to help! So if you get stuck during installation or encounter something weird, visit [the Elm Slack](http://elmlang.herokuapp.com/) and ask about it. In fact, if you run into something confusing at any point while learning or using Elm, come ask us about it. You can save yourself hours. Just do it!
+Ми пройдемося по кожному з них більш детально зразу після того, як ви налаштуєте свій текстовий редактор!
 
+> **Вирішення проблем:** Найшвидший шлях вивчити *що-завгодно* - це поговорити з іншими людьми з Elm спільноти. Ми привітливі та завжди раді допомогти! Тому, якщо ви застрягли у процессі встановки або вам трапилось щось дивне, завітайте до [the Elm Slack](http://elmlang.herokuapp.com/) та спитайте про це. Справді, якщо ви зустрінете щось заплутане в будь-який час поки ви вивчаете або користуєтесь Elm, приходьте та питайте про це. Ви можете зекономити собі години. Просто зробіть це!
 
-## Configure Your Editor
+## Налаштування Редактору
 
-Using Elm is way nicer when you have a code editor to help you out. There are Elm plugins for at least the following editors:
+Корустуватись Elm набагато приємніше, коли в вас є редактор коду, який може вам домогти. Існують плагіни для Elm принаймні до наступних редакторів:
 
   * [Atom](https://atom.io/packages/language-elm)
   * [Brackets](https://github.com/lepinay/elm-brackets)
@@ -37,21 +38,20 @@ Using Elm is way nicer when you have a code editor to help you out. There are El
   * [Vim](https://github.com/lambdatoast/elm.vim)
   * [VS Code](https://github.com/sbrink/vscode-elm)
 
-If you do not have an editor at all, [Sublime Text](https://www.sublimetext.com/) is a great one to get started with!
+Якщо в вас ще немає взагалі редактору, то [Sublime Text](https://www.sublimetext.com/) буде добрим стартом.
 
-You may also want to try out [elm-format][] which makes your code pretty!
+Також ви можливо захочете спробувати [elm-format][], він робить ваш код гарним!
 
 [elm-format]: https://github.com/avh4/elm-format
 
 
-## The Command Line Tools
+## Інструменти Командного Рядка
 
-So we installed Elm, and it gave us `elm-repl`, `elm-reactor`, `elm-make`, and `elm-package`. But what do they all do exactly?
-
+Отже ми встановили Elm та отримили `elm-repl`, `elm-reactor`, `elm-make` та `elm-package`. Але що саме вони роблять?
 
 ### elm-repl
 
-[`elm-repl`](https://github.com/elm-lang/elm-repl) lets you play with simple Elm expressions.
+[`elm-repl`](https://github.com/elm-lang/elm-repl) дозволяє погратися з виразами Elm.
 
 ```bash
 $ elm-repl
@@ -68,14 +68,14 @@ $ elm-repl
 $
 ```
 
-We will be using `elm-repl` in the upcoming &ldquo;Core Language&rdquo; section, and you can read more about how it works [here](https://github.com/elm-lang/elm-repl/blob/master/README.md).
+Ми будемо користуватися `elm-repl` в секції &ldquo;Ядро Мови&rdquo;. Ви також можете прочитати, як він працює [тут](https://github.com/elm-lang/elm-repl/blob/master/README.md).
 
-> **Note:** `elm-repl` works by compiling code to JavaScript, so make sure you have [Node.js](http://nodejs.org/) installed. We use that to evaluate code.
+> **Примітка:**  `elm-repl` працює завдяки компіляції коду в JavaScript, тому переконайтеся, що в вас встановленний [Node.js](http://nodejs.org/). Ми використовуємо його для виконання коду.
 
 
 ### elm-reactor
 
-[`elm-reactor`](https://github.com/elm-lang/elm-reactor) helps you build Elm projects without messing with the command-line too much. You just run it at the root of your project, like this:
+[`elm-reactor`](https://github.com/elm-lang/elm-reactor) допомогає будувати Elm проекти швидше без усякої плутанини з командним рядком. Ви просто запускаєте його в корені вашого проекту, як тут:
 
 ```bash
 git clone https://github.com/evancz/elm-architecture-tutorial.git
@@ -83,37 +83,37 @@ cd elm-architecture-tutorial
 elm-reactor
 ```
 
-This starts a server at [`http://localhost:8000`](http://localhost:8000). You can navigate to any Elm file and see what it looks like. Try to check out `examples/01-button.elm`.
+Це запустить сервер за адресою [`http://localhost:8000`](http://localhost:8000). Ви можете перейти до будь-якого Elm файлу та побачити, як він виглядає. Спробуйте подивитись `examples/01-button.elm`.
 
-**Notable flags:**
+**Примітні прапори:**
 
-- `--port` lets you pick something besides port 8000. So you can say
-  `elm-reactor --port=8123` to get things to run at `http://localhost:8123`.
-- `--address` lets you replace `localhost` with some other address. For
-  example, you may want to use `elm-reactor --address=0.0.0.0` if you want to
-  try out an Elm program on a mobile device through your local network.
+- `--port` дозволяє обрати інший порт. Таким чином ви можете вказати, наприклад,
+  `elm-reactor --port=8123`, щоб запустити серевер за адресою `http://localhost:8123`.
+- `--address` дозволяє замінити `localhost` на щось інше. Наприклад, ви можете
+  скористуватись `elm-reactor --address=0.0.0.0` для перевірки програми на Elm
+  на мобільному пристрої через вашу локальну мережу.
 
 
 ## elm-make
 
-[`elm-make`](https://github.com/elm-lang/elm-make) builds Elm projects. It can compile Elm code to HTML or JavaScript. It is the most general way to compile Elm code, so if your project becomes too advanced for `elm-reactor`, you will want to start using `elm-make` directly.
+[`elm-make`](https://github.com/elm-lang/elm-make) будує Elm проекти. Він може компілювати Elm код у HTML або JavaScript. Це найбільш загальний спосіб зкомпілювати Elm код, тому якщо ваш проект стане занадто складним для `elm-reactor`, ви можете починати безпосередньо використовувати `elm-make`.
 
-Say you want to compile `Main.elm` to an HTML file named `main.html`. You would run this command:
+Скажімо ви хочете скомпілювати `Main.elm` у HTML файл з ім'ям `main.html`. Для цього вам потрібно використати наступну команду:
 
 ```bash
 elm-make Main.elm --output=main.html
 ```
 
-**Notable flags:**
+**Примітні прапори:**
 
-- `--warn` prints warnings to improve code quality
+- `--warn` виводить попередження на екран для покращення якості коду
 
 
 ### elm-package
 
-[`elm-package`](https://github.com/elm-lang/elm-package) downloads and publishes packages from our [package catalog](http://package.elm-lang.org/). As community members solve problems [in a nice way](http://package.elm-lang.org/help/design-guidelines), they share their code in the package catalog for anyone to use!
+[`elm-package`](https://github.com/elm-lang/elm-package) скачує та публікує пакети в наш [каталог пакетів](http://package.elm-lang.org/). Так як члени нашої спільноти вирішують проблеми [елегантним шляхом](http://package.elm-lang.org/help/design-guidelines), вони поширюють їхній код у цей каталог, щоб інші люди також могли їм користуватися!
 
-Say you want to use [`elm-lang/http`][http] and [`NoRedInk/elm-decode-pipeline`][pipe] to make HTTP requests to a server and turn the resulting JSON into Elm values. You would say:
+Скажімо, ви хочете використати [`elm-lang/http`][http] та [`NoRedInk/elm-decode-pipeline`][pipe], щоб робити HTTP запити до сервера, та перетворювати вхідний JSON в значення Elm. Для цього ви можете зробити наступне:
 
 [http]: http://package.elm-lang.org/packages/elm-lang/http/latest
 [pipe]: http://package.elm-lang.org/packages/NoRedInk/elm-decode-pipeline/latest
@@ -123,12 +123,11 @@ elm-package install elm-lang/http
 elm-package install NoRedInk/elm-decode-pipeline
 ```
 
-This will add the dependencies to your `elm-package.json` file that describes your project. (Or create it if you do not have one yet!) More information about all this [here](https://github.com/elm-lang/elm-package)!
+Це додасть залежності до вашого `elm-package.json` файлу, що описує ваш проект. (Або создасть його, якщо він ще не існує!) Більше інформації ви можете знайти [тут](https://github.com/elm-lang/elm-package)!
 
+**Примітні команди:**
 
-**Notable commands:**
-
-- `install`: install the dependencies in `elm-package.json`
-- `publish`: publish your library to the Elm Package Catalog
-- `bump`: bump version numbers based on API changes
-- `diff`: get the difference between two APIs
+- `install`: встановлює залежності до `elm-package.json`
+- `publish`: публікує вашу бібліотеку до Каталогу Пакетів Elm
+- `bump`: підіймає номер версії в залежності від змін API
+- `diff`: виводить на екран різницю між двома версіями API
